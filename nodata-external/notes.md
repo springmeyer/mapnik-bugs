@@ -1,0 +1,1 @@
+http://support.mapbox.com/discussions/tilemill/6605-how-do-i-set-black-to-transparent-in-a-geotiff
