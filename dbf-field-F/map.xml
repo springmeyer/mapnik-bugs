@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map srs="+init=EPSG:4326" background-color="rgb(255,255,255)">
+    <Style name="Total_N_Emissions_labels">
+        <Rule>
+            <TextSymbolizer vertical-alignment="middle" avoid-edges="true" face-name="DejaVu Sans Bold" size="9">[TOTAL_N_no]</TextSymbolizer>
+        </Rule>
+    </Style>
+    <Style name="Total_N_Emissions_style">
+        <Rule>
+            <PolygonSymbolizer fill="rgb(1,34,193)" gamma="0.7"/>
+            <LineSymbolizer stroke-width="0.96"/>
+        </Rule>
+    </Style>
+    <Layer name="Total_N_Emissions" srs="+init=EPSG:4326">
+        <StyleName>Total_N_Emissions_style</StyleName>
+        <StyleName>Total_N_Emissions_labels</StyleName>
+        <Datasource>
+            <Parameter name="file">Total_N_Emissions.shp</Parameter>
+            <Parameter name="type">shape</Parameter>
+        </Datasource>
+    </Layer>
+</Map>
+
+<!-- nik2img.py mapnik.xml out.png -d 880 359 -e -123.217788845 48.4694744919 -122.659065658 48.6966546488 -->
+<!-- <MinScaleDenominator>252996.99266</MinScaleDenominator> -->
